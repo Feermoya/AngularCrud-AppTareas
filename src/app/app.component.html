@@ -2,17 +2,17 @@
   <div class="row">
     <div class="col-sm-8">
 
-      <h1 class="text-center">
-        {{title}}
+      <h1 class="text-center titulo">
+        App-Tareas
       </h1>
     </div>
 
     <div class="col-sm-4">
-      <div class="alert alert-success alert-dismissable">
-        <a href="#" class="close">
+      <div class="alert alert-success alert-dismissable" *ngIf="mensaje">
+        <a href="#" class="close" (click)="cerrarAlerta()">
           &times;
         </a>
-        mensaje aqui
+        {{mensaje}}
       </div>
     </div>
 
@@ -99,10 +99,10 @@
         </tbody>
       </table>
     </div>
-    <div class="col-sm-4">
+
+    <div class="col-sm-4" [hidden]="ocultarUpdate">
       <h2>Editar datos:</h2>
       <form class="form-horizontal">
-
         <div class="form-group">
           <label for="name" class="control-label col-sm-2">
             Nombre
