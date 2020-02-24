@@ -13,4 +13,21 @@ export class AppComponent {
     {'name': 'Carlos', posicion: 'programmer'}
   ];
 
+  model: any = {}; //datos temporales
+  addEmpleado(): void{
+
+  }
+
+  deleteEmpleado(): void{
+
+  }
+
+  editEmpleado(): void{
+
+  }
+
+  updateEmpleado(): void{
+
+  }
+
 }
