@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-tareas';
+  empleados= [
+    {'name': 'Fernando', posicion: 'manager'},
+    {'name': 'Juan', posicion: 'designer'},
+    {'name': 'Carlos', posicion: 'programmer'}
+  ];
+
 }
