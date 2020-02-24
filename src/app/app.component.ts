@@ -6,16 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-tareas';
+  title = 'App-Tareas';
   empleados= [
-    {'name': 'Fernando', posicion: 'manager'},
-    {'name': 'Juan', posicion: 'designer'},
-    {'name': 'Carlos', posicion: 'programmer'}
+    {'name': 'Fernando', cargo: 'manager'},
+    {'name': 'Juan', cargo: 'designer'},
+    {'name': 'Carlos', cargo: 'programmer'}
   ];
 
   model: any = {}; //datos temporales
   addEmpleado(): void{
-
+    this.empleados.push(this.model);
   }
 
   deleteEmpleado(): void{
