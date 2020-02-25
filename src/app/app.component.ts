@@ -1,3 +1,4 @@
+import { Empleado } from './models/empleado';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,10 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'App-Tareas';
   mensaje: string='';
-  empleados= [
-    {'prioridad': 'Alta', cargo: 'manager', email:'fmoya97@gmail.com'},
-    {'prioridad': 'Media', cargo: 'designer', email:'hola@gmail.com'},
-    {'prioridad': 'Baja', cargo: 'programmer', email:'Code@gmail.com'}
+  
+  empleados: Empleado[]= [
+    {prioridad: 'Alta', cargo: 'manager', email:'fmoya97@gmail.com'},
+    {prioridad: 'Media', cargo: 'designer', email:'hola@gmail.com'},
+    {prioridad: 'Baja', cargo: 'programmer', email:'Code@gmail.com'}
   ];
 
   model: any = {}; //datos temporales
