@@ -23,16 +23,16 @@
         alt="">
     </div>
     <div class="col-sm-8">
-      <h2>Agregar Datos:</h2>
+      
       <form class="form-horizontal">
 
         <div class="form-group">
-          <label for="name" class="control-label col-sm-2">
-            Nombre
+          <label for="prioridad" class="control-label col-sm-2">
+            Prioridad
           </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model.name"
-              placeholder="Agregar un nuevo Nombre">
+            <input type="text" class="form-control" id="prioridad" name="prioridad" [(ngModel)]="model.prioridad"
+              placeholder="Tipo de Prioridad">
           </div>
         </div>
 
@@ -72,11 +72,11 @@
 
   <div class="row"> <!-- Tabla -->
     <div class="col-sm-8">
-      <h2>Leer Datos:</h2>
+
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>Nombre</th>
+            <th>Prioridad</th>
             <th>Cargo</th>
             <th>Email</th>
             <th>Acciones</th>
@@ -84,7 +84,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let empleado of empleados; let i = index">
-            <td>{{empleado.name}}</td>
+            <td>{{empleado.prioridad}}</td>
             <td>{{empleado.cargo}}</td>
             <td>{{empleado.email}}</td>
             <td>
@@ -105,12 +105,12 @@
       <form class="form-horizontal">
         <div class="form-group">
           <label for="name" class="control-label col-sm-2">
-            Nombre
+            Prioridad
           </label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="name"
-             name="name" [(ngModel)]="model2.name"
-              placeholder="Agregar un nuevo Nombre">
+            <input type="text" class="form-control" id="prioridad"
+             name="prioridad" [(ngModel)]="model2.prioridad"
+              placeholder="Tipo de prioridad">
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tomorrow:800&display=swap");
 .app{
   border-radius: 4px;
   margin-top: 20px;
@@ -8,6 +8,6 @@
 
 .titulo{
  color: rgb(7, 7, 7);
- font-family: 'Anton' ;
+ font-family: 'Tomorrow' ;
 
 }

@@ -9,9 +9,9 @@ export class AppComponent {
   title = 'App-Tareas';
   mensaje: string='';
   empleados= [
-    {'name': 'Fernando', cargo: 'manager', email:'fmoya97@gmail.com'},
-    {'name': 'Juan', cargo: 'designer', email:'hola@gmail.com'},
-    {'name': 'Carlos', cargo: 'programmer', email:'Code@gmail.com'}
+    {'prioridad': 'Alta', cargo: 'manager', email:'fmoya97@gmail.com'},
+    {'prioridad': 'Media', cargo: 'designer', email:'hola@gmail.com'},
+    {'prioridad': 'Baja', cargo: 'programmer', email:'Code@gmail.com'}
   ];
 
   model: any = {}; //datos temporales
@@ -19,7 +19,7 @@ export class AppComponent {
   ocultarUpdate: boolean=true;
 
   addEmpleado(): void{
-    
+
     this.empleados.push(this.model);
     this.mensaje='Empleado Agregado';
   }
@@ -34,7 +34,7 @@ export class AppComponent {
   indice;
   editEmpleado(i): void{
     this.ocultarUpdate=false;
-    this.model2.name= this.empleados[i].name;
+    this.model2.prioridad= this.empleados[i].prioridad;
     this.model2.cargo= this.empleados[i].cargo;
     this.model2.email=this.empleados[i].email;
     this.indice=i;
